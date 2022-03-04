@@ -1,0 +1,59 @@
+/* -----------------------------------Font---------------------------------------- */
+@font-face {
+  font-family: irs;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../Fonts/iransans/IRANSans(FaNum)_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: irs;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../Fonts/iransans/IRANSans(FaNum)_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: irs;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../Fonts/iransans/IRANSans(FaNum)_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: irs;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../Fonts/iransans/IRANSans(FaNum)_UltraLight.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: irs;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Fonts/iransans/IRANSans(FaNum).ttf") format("truetype");
+}
+
+@font-face {
+  font-family: fonticon;
+  font-family: fonticon;
+  src: url("../Fonts/fonticon/fonticon.eot");
+  src: url("../Fonts/fonticon/fonticon.eot?#iefix") format("embedded-opentype"),
+    url("../Fonts/fonticon/fonticon.woff2") format("woff2"),
+    url("../Fonts/fonticon/fonticon.woff") format("woff"),
+    url("../Fonts/fonticon/fonticon.ttf") format("truetype");
+}
+
+/* -----------------------------------End Font---------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'irs', sans-serif;
+  direction: rtl;
+}
