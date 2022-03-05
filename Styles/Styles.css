@@ -1,4 +1,4 @@
-/* -----------------------------------Font---------------------------------------- */
+/* ------Font------ */
 @font-face {
   font-family: irs;
   font-style: normal;
@@ -45,7 +45,7 @@
     url("../Fonts/fonticon/fonticon.ttf") format("truetype");
 }
 
-/* -----------------------------------End Font---------------------------------------- */
+/* ------End of Font------- */
 
 * {
   margin: 0;
@@ -57,3 +57,49 @@ body {
   font-family: 'irs', sans-serif;
   direction: rtl;
 }
+
+/* ------Header------ */
+
+.header {
+  height: 140px;
+  background: #2d3a64;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu__item {
+  margin-left: 60px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.logo {
+  width: 92px;
+}
+
+.logo__img {
+  width: 100%;
+}
+
+/* ------End of Header------ */
