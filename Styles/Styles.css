@@ -53,6 +53,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "irs", sans-serif;
   direction: rtl;
@@ -69,15 +73,15 @@ body {
 
 .monitor__container {
   background-color: #2d3a64;
-  border-radius: 100px 0;
+  border-radius: 10rem 0;
   width: 70%;
   height: 100%;
-  padding: 4rem 2rem;
+  padding: 6.4rem 3.2rem;
 }
 
 .monitor__header {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .monitor__form {
@@ -87,9 +91,9 @@ body {
 
 .monitor__input {
   width: 50%;
-  margin-bottom: 2rem;
-  padding: 0.3rem 1rem;
-  border-radius: 1rem;
+  margin-bottom: 3.2rem;
+  padding: 0.5rem 1.6rem;
+  border-radius: 1.6rem;
 }
 
 .monitor__number__container {
@@ -98,30 +102,30 @@ body {
 }
 
 .monitor__number {
-  font-size: 6rem;
+  font-size: 9.6rem;
   font-weight: 600;
 }
 .monitor__number__label {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .monitor__label {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 /* ------End of monitor----- */
 
 /* ------Header------ */
 
 .header {
-  height: 140px;
+  height: 14rem;
   background: #2d3a64;
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 140rem;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 2.5rem;
 }
 
 .nav {
@@ -136,18 +140,18 @@ body {
 }
 
 .menu__item {
-  margin-left: 60px;
+  margin-left: 6rem;
 }
 
 .menu__link {
   text-decoration: none;
   color: #ffffff;
-  padding: 10px 0;
-  font-size: 20px;
+  padding: 1rem 0;
+  font-size: 2rem;
 }
 
 .logo {
-  width: 92px;
+  width: 9.2rem;
 }
 
 .logo__img {
@@ -159,7 +163,7 @@ body {
 /* ------BMI Section----- */
 
 #BMI {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -176,12 +180,12 @@ body {
 }
 
 .bmi__alert {
-  font-size: 2.5rem;
-  margin: 1.2rem 0 0.5rem;
+  font-size: 4rem;
+  margin: 2rem 0 0.8rem;
 }
 
 .bmi__advise {
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 
 /* ------End of BMI Section----- */
