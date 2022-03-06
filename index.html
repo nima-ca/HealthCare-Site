@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthCare</title>
-    <link rel="stylesheet" href="Styles/Styles.css">
     <link rel="stylesheet" href="Styles/Normalize.css">
+    <link rel="stylesheet" href="Styles/Styles.css">
 </head>
 <body>
     <!-- ----Header---- -->
@@ -35,23 +35,25 @@
     </header>
     <!-- ----End of Header---- -->
 
-    <section id="BMI">
+    <section id="BMI" class="container">
         <div class="bmi__content">
-            <h2>!متاسفانه شما اضافه وزن دارید</h2>
-            <p>شما بایذ 5 کیلوگرم اضافه کنید</p>
-            <img src="Img/BMI-women-min.png" alt="">
+            <h2 class="bmi__alert">متاسفانه شما اضافه وزن دارید!</h2>
+            <p class="bmi__advise">شما باید 5 کیلوگرم اضافه کنید</p>
+            <img class="bmi__image" src="Img/BMI-women-min.png" alt="">
         </div>
         <div class="monitor">
-            <h3>محاسبه BMI</h3>
-            <form action="#">
-                <label for="height">قد به متر:</label>
-                <input type="number" name="height">
-                <label for="weight">وزن به کیلوگرم:</label>
-                <input type="number" name="weight">
-            </form>
-            <div>
-                <h5>BMI شما</h5>
-                <p>25.0</p>
+            <div class="monitor__container">
+                <h3 class="monitor__header">محاسبه BMI</h3>
+                <form class="monitor__form" action="#">
+                    <label class="monitor__label" for="height">قد به متر:</label>
+                    <input class="monitor__input" type="number" name="height">
+                    <label class="monitor__label" for="weight">وزن به کیلوگرم:</label>
+                    <input class="monitor__input" type="number" name="weight">
+                </form>
+                <div class="monitor__number__container">
+                    <h5 class="monitor__number__label">BMI شما:</h5>
+                    <p class="monitor__number" >25.0</p>
+                </div>
             </div>
         </div>
     </section>

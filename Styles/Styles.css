@@ -54,9 +54,61 @@
 }
 
 body {
-  font-family: 'irs', sans-serif;
+  font-family: "irs", sans-serif;
   direction: rtl;
 }
+
+/* ------Monitor------ */
+
+.monitor {
+  color: #ffffff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.monitor__container {
+  background-color: #2d3a64;
+  border-radius: 100px 0;
+  width: 70%;
+  height: 100%;
+  padding: 4rem 2rem;
+}
+
+.monitor__header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.monitor__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.monitor__input {
+  width: 50%;
+  margin-bottom: 2rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+}
+
+.monitor__number__container {
+  display: flex;
+  justify-content: center;
+}
+
+.monitor__number {
+  font-size: 6rem;
+  font-weight: 600;
+}
+.monitor__number__label {
+  font-size: 1.2rem;
+}
+
+.monitor__label {
+  margin-bottom: 0.5rem;
+}
+/* ------End of monitor----- */
 
 /* ------Header------ */
 
@@ -103,3 +155,33 @@ body {
 }
 
 /* ------End of Header------ */
+
+/* ------BMI Section----- */
+
+#BMI {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.bmi__content {
+  width: 50%;
+}
+
+.bmi__image {
+  width: 80%;
+}
+
+.bmi__alert {
+  font-size: 2.5rem;
+  margin: 1.2rem 0 0.5rem;
+}
+
+.bmi__advise {
+  font-size: 2rem;
+}
+
+/* ------End of BMI Section----- */
