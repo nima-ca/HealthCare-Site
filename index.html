@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HealthCare</title>
-    <link rel="stylesheet" href="Styles/Styles.css">
-    <link rel="stylesheet" href="Styles/Normalize.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Styles/Styles.css" />
+    <link rel="stylesheet" href="Styles/Normalize.css" />
+  </head>
+  <body>
     <!-- ----Header---- -->
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">تماس با ما</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">محاسبه WHtR</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">محاسبه BMI</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">خانه</a>
-                    </li>
-                </ul>
-                <div class="logo">
-                    <img src="Img/logo.png" alt="logo" class="logo__img">
-                </div>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">تماس با ما</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">محاسبه WHtR</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">محاسبه BMI</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">خانه</a>
+            </li>
+          </ul>
+          <div class="logo">
+            <img src="Img/logo.png" alt="logo" class="logo__img" />
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- ----End of Header---- -->
 
+    <!-- ----Tools---- -->
+    <section class="main">
+      <div class="container">
+        <div class="tools">
+            <div class="measurement">
+                <h1 class="measurement__title">سلامتي خود را بسنجيد !!!</h1>
+                <p class="measurement__desc">
+                  سلامتي خود را با ابزار هاي سلامتي ما بسنجيد و از شرايط سلامتي خود
+                  آگاه شويد!
+                </p>
+                <button type="button" class="measurement__btn "><a href="#" class="measurement__link">WHtr</a></button>
+                <button type="button" class="measurement__btn "><a href="#" class="measurement__link">BMI</a></button>
+            </div>
+          <div class="metabolism">
+            <img src="Img/Women-metabolism-min.png" class="metabolism__img"  alt="women metabolism"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----End of Tools---- -->
 
-<script src="Script/index.js"></script>
-</body>
+    <script src="Script/index.js"></script>
+  </body>
 </html>
