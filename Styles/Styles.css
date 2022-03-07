@@ -312,3 +312,72 @@ body {
   width: 80%;
 }
 /* ------End of WHtR------ */
+
+/* -----Footer----- */
+.footer {
+  margin-top: 18rem;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.specifications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  margin-bottom: 4rem;
+}
+
+.specifications__input {
+  margin-bottom: 1rem;
+  border-radius: 4rem;
+  background: #d4d5d8;
+  height: 6rem;
+  width: 40rem;
+  border: none;
+  padding-right: 1.5rem;
+  font-size: 2rem;
+}
+
+.specifications__text {
+  border: none;
+  background: #d4d5d8;
+  border-radius: 3rem;
+  height: 27rem;
+  width: 40rem;
+  border: none;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  resize: none;
+  font-size: 2.3rem;
+}
+
+.specifications__button {
+  border: none;
+  background: #e46606;
+  width: 14rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+}
+
+.specifications__link {
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer__img {
+  width: 60%;
+  display: flex;
+  color: #ffffff;
+  margin-top: -24rem;
+}
+
+.footer__img__medical {
+  width: 100%;
+}
+/* -----End of Footer----- */
