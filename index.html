@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HealthCare</title>
-    <link rel="stylesheet" href="Styles/Normalize.css">
-    <link rel="stylesheet" href="Styles/Styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Styles/Normalize.css" />
+    <link rel="stylesheet" href="Styles/Styles.css" />
+  </head>
+  <body>
     <!-- ----Header---- -->
     <header class="header">
       <div class="container">
@@ -18,10 +18,10 @@
               <a href="#" class="menu__link">تماس با ما</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">محاسبه WHtR</a>
+              <a href="#WHtR" class="menu__link">محاسبه WHtR</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">محاسبه BMI</a>
+              <a href="#BMI" class="menu__link">محاسبه BMI</a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">خانه</a>
@@ -39,17 +39,25 @@
     <section class="main">
       <div class="container">
         <div class="tools">
-            <div class="measurement">
-                <h1 class="measurement__title">سلامتي خود را بسنجيد !!!</h1>
-                <p class="measurement__desc">
-                  سلامتي خود را با ابزار هاي سلامتي ما بسنجيد و از شرايط سلامتي خود
-                  آگاه شويد!
-                </p>
-                <button type="button" class="measurement__btn "><a href="#" class="measurement__link">WHtr</a></button>
-                <button type="button" class="measurement__btn "><a href="#" class="measurement__link">BMI</a></button>
-            </div>
+          <div class="measurement">
+            <h1 class="measurement__title">سلامتي خود را بسنجيد !!!</h1>
+            <p class="measurement__desc">
+              سلامتي خود را با ابزار هاي سلامتي ما بسنجيد و از شرايط سلامتي خود
+              آگاه شويد!
+            </p>
+            <button type="button" class="measurement__btn">
+              <a href="#WHtR" class="measurement__link">WHtr</a>
+            </button>
+            <button type="button" class="measurement__btn">
+              <a href="#BMI" class="measurement__link">BMI</a>
+            </button>
+          </div>
           <div class="metabolism">
-            <img src="Img/Women-metabolism-min.png" class="metabolism__img"  alt="women metabolism"/>
+            <img
+              src="Img/Women-metabolism-min.png"
+              class="metabolism__img"
+              alt="women metabolism"
+            />
           </div>
         </div>
       </div>
@@ -58,29 +66,76 @@
 
     <!-- ----BMI Section---- -->
     <section id="BMI" class="container">
-        <div class="bmi__content">
-            <h2 class="bmi__alert">متاسفانه شما اضافه وزن دارید!</h2>
-            <p class="bmi__advise">شما باید 5 کیلوگرم اضافه کنید</p>
-            <img class="bmi__image" src="Img/BMI-women-min.png" alt="">
+      <div class="bmi__content">
+        <h2 class="bmi__alert">متاسفانه شما اضافه وزن دارید!</h2>
+        <p class="bmi__advise">شما باید 5 کیلوگرم اضافه کنید</p>
+        <img class="bmi__image" src="Img/BMI-women-min.png" alt="" />
+      </div>
+      <div class="monitor">
+        <div class="monitor__container monitor--dark-blue">
+          <h3 class="monitor__header">محاسبه BMI</h3>
+          <form class="monitor__form" action="#">
+            <label class="monitor__label" for="height">قد به متر:</label>
+            <input class="monitor__input" type="number" name="height" />
+            <label class="monitor__label" for="weight">وزن به کیلوگرم:</label>
+            <input class="monitor__input" type="number" name="weight" />
+          </form>
+          <div class="monitor__number__container">
+            <h5 class="monitor__number__label">BMI شما:</h5>
+            <p class="monitor__number">25.0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----End of BMI Section---- -->
+
+    <!-- -----BMI table----- -->
+    <div class="table">
+      <img src="Img/bmi-table-min.png" alt="BMI table" class="table__img" />
+    </div>
+
+    <!-- -----End of BMI table----- -->
+
+    <!-- --------WHtR-------- -->
+    <section id="WHtR" class="calculation">
+      <div class="container whtr__container">
+        <div class="whtr">
+          <h2 class="whtr__question">WHtR چيست ؟</h2>
+          <p class="whtr__answer">
+            WHtR مخفف "نسبت دور کمر به قد" است و نسبت دور کمر به قد بدن را نشان
+            می دهد. WHtR بر خلاف شاخص توده بدن (BMI), وزن کلی بدن را در نظر نمی
+            گیرد ، بلکه دور شکم را در نظر می گیرد ، که می تواند اطلاعاتی در مورد
+            خطر ابتلا به بیماری در فرد فراهم کند.
+          </p>
+          <p class="whtr__answer">
+             دور شکم او را باید صبح قبل از
+            صبحانه توسط همه اندازه بگیرید. نوار اندازه گیری در اطراف شکم درست
+            بالای ناف قرار می گیرد. مهم است که شکم نه کشیده شود و نه با زور
+            بازدم شود.
+          </p>
+          <p class="whtr__answer">
+            مقادیر بین 0.4 تا 0.5 در محدوده ایده آل است. برای افراد
+            بالای 40 سال ، WHtR نباید بیش از 0.6 باشد.
+          </p>
         </div>
         <div class="monitor">
-            <div class="monitor__container">
-                <h3 class="monitor__header">محاسبه BMI</h3>
-                <form class="monitor__form" action="#">
-                    <label class="monitor__label" for="height">قد به متر:</label>
-                    <input class="monitor__input" type="number" name="height">
-                    <label class="monitor__label" for="weight">وزن به کیلوگرم:</label>
-                    <input class="monitor__input" type="number" name="weight">
-                </form>
-                <div class="monitor__number__container">
-                    <h5 class="monitor__number__label">BMI شما:</h5>
-                    <p class="monitor__number" >25.0</p>
-                </div>
+          <div class="monitor__container monitor--orange">
+            <h3 class="monitor__header">محاسبه WHtR</h3>
+            <form class="monitor__form" action="#">
+              <label class="monitor__label" for="height">قد به سانتي متر:</label>
+              <input class="monitor__input" type="number" name="height" />
+              <label class="monitor__label" for="weight">دور کمر به سانتي متر:</label>
+              <input class="monitor__input" type="number" name="weight" />
+            </form>
+            <div class="monitor__number__container">
+              <h5 class="monitor__number__label">WHtR شما:</h5>
+              <p class="monitor__number">0.45</p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- ----End of BMI Section---- -->
+    <!-- -----------End of WHtR------------ -->
 
     <script src="Script/index.js"></script>
   </body>
