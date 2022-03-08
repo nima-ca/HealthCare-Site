@@ -381,3 +381,41 @@ body {
   width: 100%;
 }
 /* -----End of Footer----- */
+
+/* -----Animation----- */
+
+.animation--hover-up {
+  transition: all 0.3s;
+}
+.animation--hover-up:hover {
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  transition: 0.3s;
+}
+.hover-underline:hover {
+  transform: scale(1.15) translateY(-10px);
+}
+
+.hover-underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
