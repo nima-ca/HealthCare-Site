@@ -12,7 +12,13 @@ const whtr = (waist, height) => {
 };
 
 const showWhtr = () => {
-  if (valueWaist && valueHeight) {
+  let whtrValidation =
+    valueWaist > 0 &&
+    valueWaist < 1000 &&
+    valueHeight > 0 &&
+    valueHeight < 1000 &&
+    valueHeight != 0;
+  if (whtrValidation) {
     whtrElement.innerHTML = whtr(valueWaist, valueHeight);
   } else {
     whtrElement.innerHTML = "0.00";
@@ -43,7 +49,13 @@ const bmi = (weight, height) => {
 };
 
 const showBmi = () => {
-  if (bmiWeightValue && bmiHeightValue) {
+  let BMIValidation =
+    bmiWeightValue > 0 &&
+    bmiWeightValue < 1000 &&
+    bmiHeightValue > 0 &&
+    bmiHeightValue < 1000 &&
+    bmiHeightValue != 0;
+  if (BMIValidation) {
     bmiElement.innerHTML = bmi(bmiWeightValue, bmiHeightValue);
   } else {
     bmiElement.innerHTML = "0.00";
