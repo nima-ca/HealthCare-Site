@@ -406,6 +406,8 @@ body {
   transform-origin: bottom left;
 }
 
+/* -----Animation----- */
+
 /* ----Button---- */
 
 .btn {
@@ -425,3 +427,5 @@ body {
   color: var(--color-white);
   font-size: 25px;
 }
+
+/* ----End of Button---- */
