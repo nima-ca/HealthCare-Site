@@ -1,37 +1,61 @@
-const height = document.querySelector(".monitor__height")
-const waist = document.querySelector(".monitor__waist")
-const whtrElement = document.querySelector(".monitor__whtr")
+// WHtR Logic Section
 
-let valueHight , valueWaist;
+const whtrHeight = document.querySelector(".whtr__height");
+const whtrWaist = document.querySelector(".whtr__waist");
+const whtrElement = document.querySelector(".monitor__whtr");
 
-height.addEventListener("change" , (e)  => {
-    valueHight = e.target.value
-})
+let valueHeight, valueWaist;
 
-const whtr = (waist , height) => {
-    const res = (waist / height)
-    return res.toFixed(2)
-}
+const whtr = (waist, height) => {
+  const res = waist / height;
+  return res.toFixed(2);
+};
 
-const showWhtr = ()=>{
-    if(valueWaist && valueHight){
-        whtrElement.innerHTML = whtr(valueWaist , valueHight)
-    }else{
-        whtrElement.innerHTML = '0.00'
-    }
-}
+const showWhtr = () => {
+  if (valueWaist && valueHeight) {
+    whtrElement.innerHTML = whtr(valueWaist, valueHeight);
+  } else {
+    whtrElement.innerHTML = "0.00";
+  }
+};
 
-waist.addEventListener("input" , (e)  => {
-    valueWaist = e.target.value
-    showWhtr()
+whtrHeight.addEventListener("keyup", (e) => {
+  valueHeight = e.target.value;
+  showWhtr();
+});
 
-})
+whtrWaist.addEventListener("keyup", (e) => {
+  valueWaist = e.target.value;
+  showWhtr();
+});
 
+// BMI Logic Section
 
+const bmiHeight = document.querySelector(".bmi__height");
+const bmiWeight = document.querySelector(".bmi__weight");
+const bmiElement = document.querySelector(".monitor__bmi");
 
+let bmiHeightValue, bmiWeightValue;
 
+const bmi = (weight, height) => {
+  const res = weight / height ** 2;
+  return res.toFixed(2);
+};
 
+const showBmi = () => {
+  if (bmiWeightValue && bmiHeightValue) {
+    bmiElement.innerHTML = bmi(bmiWeightValue, bmiHeightValue);
+  } else {
+    bmiElement.innerHTML = "0.00";
+  }
+};
 
+bmiHeight.addEventListener("keyup", (e) => {
+  bmiHeightValue = e.target.value;
+  showBmi();
+});
 
-
-
+bmiWeight.addEventListener("keyup", (e) => {
+  bmiWeightValue = e.target.value;
+  showBmi();
+});
