@@ -373,6 +373,10 @@ body {
   box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-10px);
 }
+.animation--hover-up:active {
+  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
 
 .hover-underline {
   display: inline-block;
@@ -401,6 +405,8 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* ----Button---- */
 
 .btn {
   display: inline-flex;
