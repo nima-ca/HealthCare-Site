@@ -1,3 +1,5 @@
+// BMI Logic Section
+
 const bmiHeight = document.querySelector(".bmi__height");
 const bmiWeight = document.querySelector(".bmi__weight");
 const bmiElement = document.querySelector(".monitor__bmi");
