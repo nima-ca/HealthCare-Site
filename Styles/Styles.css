@@ -147,7 +147,7 @@ input[type="number"] {
 }
 
 .measurement__desc {
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: var(--color-black);
   width: 47rem;
   line-height: 3.5rem;
