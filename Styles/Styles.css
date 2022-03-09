@@ -249,6 +249,7 @@ input[type="number"] {
   font-size: 9.6rem;
   font-weight: 600;
 }
+
 .monitor__number__label {
   font-size: 2rem;
 }
@@ -378,10 +379,12 @@ input[type="number"] {
 .animation--hover-up {
   transition: all 0.3s;
 }
+
 .animation--hover-up:hover {
   box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(-10px);
 }
+
 .animation--hover-up:active {
   box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
@@ -393,6 +396,7 @@ input[type="number"] {
   color: var(--color-white);
   transition: 0.3s;
 }
+
 .hover-underline:hover {
   transform: scale(1.15) translateY(-10px);
 }
@@ -438,3 +442,268 @@ input[type="number"] {
 }
 
 /* ----End of Button---- */
+
+/* ----hamburger---- */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-white);
+}
+
+/* ----End of hamburger---- */
+
+/* ----------Responsive------------- */
+@media (max-width: 1335px) {
+  .nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .metabolism__img {
+    width: 54rem;
+  }
+
+  .measurement__title {
+    font-size: 4rem;
+  }
+
+  .measurement__desc {
+    width: 40rem;
+  }
+
+  .btn {
+    height: 5rem;
+    width: 16rem;
+    font-size: 21px;
+  }
+
+  .bmi__content {
+    height: 41rem;
+  }
+
+  .bmi__alert {
+    font-size: 3rem;
+  }
+
+  .bmi__advise {
+    font-size: 2.5rem;
+  }
+
+  .whtr__question {
+    font-size: 2.3rem;
+  }
+
+  .whtr__answer {
+    font-size: 1.6rem;
+  }
+
+  .specifications {
+    margin-right: 2rem;
+    width: 50%;
+  }
+
+  .footer__img {
+    width: 50%;
+    margin-left: 2rem;
+  }
+}
+
+/* ------------------- */
+
+@media (max-width: 930px) {
+  .measurement__title {
+    font-size: 2.8rem;
+  }
+
+  .measurement__desc {
+    width: 35rem;
+  }
+
+  .btn {
+    height: 4rem;
+    width: 13rem;
+    font-size: 1.8rem;
+  }
+
+  .metabolism {
+    top: 20rem;
+  }
+
+  .metabolism__img {
+    width: 42rem;
+  }
+
+  .whtr {
+    width: 58%;
+  }
+
+  .monitor__container {
+    width: 80%;
+  }
+
+  .specifications__input,
+  .specifications__text {
+    width: 34rem;
+  }
+
+  .footer__img {
+    width: 50%;
+    margin-left: 5rem;
+    margin-top: -10rem;
+  }
+}
+
+/* -------responsive for tablet------- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active1 .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active1 .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active1 .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+    position: fixed;
+    left: -100%;
+    top: 102px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #26304e;
+    width: 100%;
+    text-align: center;
+    transition: 1s;
+    z-index: 999;
+  }
+
+  .menu__item {
+    margin: 8px 0;
+  }
+
+  .menu.active1 {
+    left: 0;
+  }
+
+  .logo {
+    width: 7.3rem;
+  }
+
+  .metabolism {
+    display: none;
+  }
+
+  .measurement {
+    margin-right: 5rem;
+    padding-top: 23rem;
+  }
+
+  .bmi__content {
+    display: none;
+  }
+
+  .monitor--dark-blue {
+    width: 113%;
+  }
+
+  .table__img {
+    display: none;
+  }
+
+  #BMI {
+    margin-top: 1rem;
+    margin-bottom: -18rem;
+  }
+
+  .whtr__question,
+  .whtr__answer1,
+  .whtr__answer2 {
+    display: none !important;
+  }
+
+  .whtr__answer3 {
+    font-size: 1.4rem;
+    margin-right: 6rem;
+    width: 123%;
+    margin-bottom: 58rem;
+    line-height: 2.3rem;
+  }
+
+  .monitor {
+    width: 57%;
+  }
+
+  .monitor__container {
+    width: 100%;
+  }
+
+  .monitor--orange {
+    margin-left: 17rem;
+  }
+
+  .footer__img {
+    display: none;
+  }
+
+  .specifications {
+    margin-right: 4rem;
+    margin-top: -10rem;
+  }
+}
+
+/* ---------responsive for mobile------------- */
+@media (max-width: 406px) {
+  .measurement__title {
+    font-size: 2.1rem;
+  }
+
+  .monitor {
+    width: 50%;
+  }
+
+  .specifications__input,
+  .specifications__text {
+    width: 31rem;
+  }
+
+  .measurement__desc {
+    width: 30rem;
+  }
+
+  .monitor__header {
+    font-size: 2.5rem;
+  }
+
+  .monitor__number__label {
+    font-size: 2rem;
+    margin-right: 4rem;
+  }
+
+  .monitor__number {
+    font-size: 6.6rem;
+    margin-left: 4rem;
+  }
+
+  .specifications__input,
+  .specifications__text {
+    width: 29rem;
+  }
+}
+
+/* ----------End of Responsive------------- */
