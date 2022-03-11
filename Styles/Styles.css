@@ -522,6 +522,18 @@ input[type="number"] {
 /* ------------------- */
 
 @media (max-width: 930px) {
+  .main {
+    height: 40rem;
+  }
+
+  #BMI {
+    margin-top: 1rem;
+  }
+
+  .measurement {
+    padding-top: 7rem;
+  }
+
   .measurement__title {
     font-size: 2.8rem;
   }
@@ -537,24 +549,62 @@ input[type="number"] {
   }
 
   .metabolism {
-    top: 20rem;
+    top: 4rem;
   }
 
   .metabolism__img {
     width: 42rem;
   }
 
+  .bmi__advise {
+    font-size: 2.1rem;
+  }
+
+  .bmi__content {
+    height: 34rem;
+  }
+
   .whtr {
-    width: 58%;
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .whtr__answer {
+    width: 83%;
+    line-height: 2.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .whtr__container {
+    padding-top: 17rem;
+  }
+
+  .calculation {
+    height: 85rem;
   }
 
   .monitor__container {
     width: 80%;
+    margin-top: 4rem;
+    padding: 6.4rem 3.2rem 3rem 3.2rem;
+  }
+
+  .table {
+    margin-top: 9rem;
+    margin-bottom: 0;
+  }
+
+  .table__img {
+    width: 67%;
   }
 
   .specifications__input,
   .specifications__text {
     width: 34rem;
+  }
+
+  .footer {
+    margin-top: 6rem;
   }
 
   .footer__img {
@@ -588,10 +638,11 @@ input[type="number"] {
     top: 102px;
     gap: 0;
     flex-direction: column;
-    background-color: #26304e;
+    background-color: var(--color-secondary);
     width: 100%;
     text-align: center;
     transition: 1s;
+    height: 100vh;
     z-index: 999;
   }
 
@@ -607,36 +658,52 @@ input[type="number"] {
     width: 7.3rem;
   }
 
+  .main {
+    height: 64rem;
+  }
+
+  .tools {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .metabolism {
-    display: none;
+    position: unset;
+  }
+
+  .metabolism__img {
+    margin-top: 2rem;
   }
 
   .measurement {
-    margin-right: 5rem;
-    padding-top: 23rem;
-  }
-
-  .bmi__content {
-    display: none;
-  }
-
-  .monitor--dark-blue {
-    width: 113%;
-  }
-
-  .table__img {
-    display: none;
+    margin-right: 0;
+    padding-top: 4rem;
   }
 
   #BMI {
-    margin-top: 1rem;
-    margin-bottom: -18rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
   }
 
-  .whtr__question,
-  .whtr__answer1,
-  .whtr__answer2 {
-    display: none !important;
+  .bmi__content {
+    height: 30%;
+    width: 64%;
+  }
+
+  .bmi__alert {
+    font-size: 2.5rem;
+  }
+
+  .bmi__image {
+    width: 100%;
+  }
+
+  .table__img {
+    width: 75%;
   }
 
   .whtr__answer3 {
@@ -648,29 +715,77 @@ input[type="number"] {
   }
 
   .monitor {
-    width: 57%;
+    width: 53%;
+  }
+
+  .monitor__header {
+    font-size: 2.8rem;
+  }
+
+  .monitor__number {
+    font-size: 6.6rem;
   }
 
   .monitor__container {
-    width: 100%;
+    width: 101%;
+    margin-top: 5rem;
+  }
+
+  .table {
+    margin-top: 6rem;
+    margin-bottom: -7rem;
   }
 
   .monitor--orange {
-    margin-left: 17rem;
+    margin-left: 0;
+  }
+
+  .whtr {
+    margin-right: 0;
+    width: 70%;
+  }
+
+  .whtr__answer {
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+
+  .whtr__container {
+    flex-direction: column;
+    padding-top: 24rem;
+  }
+
+  .calculation {
+    height: 131rem;
+  }
+
+  .footer {
+    margin-top: 0rem;
   }
 
   .footer__img {
-    display: none;
+    margin-left: 0;
+    margin-top: 1rem;
+    padding-bottom: 4rem;
+    width: 64%;
+  }
+
+  .footer__container {
+    flex-direction: column;
   }
 
   .specifications {
-    margin-right: 4rem;
-    margin-top: -10rem;
+    margin-right: 0;
+    align-items: center;
   }
 }
 
 /* ---------responsive for mobile------------- */
-@media (max-width: 406px) {
+@media (max-width: 420px) {
+  .metabolism__img {
+    width: 39rem;
+  }
+
   .measurement__title {
     font-size: 2.1rem;
   }
@@ -705,6 +820,10 @@ input[type="number"] {
   .specifications__input,
   .specifications__text {
     width: 29rem;
+  }
+
+  .monitor--orange {
+    width: 107%;
   }
 }
 
