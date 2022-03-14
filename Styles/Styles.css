@@ -234,7 +234,7 @@ input[type="number"] {
 
 .monitor__input {
   font-size: 1.5rem;
-  width: 50%;
+  width: 95%;
   margin-bottom: 3.2rem;
   padding: 0.5rem 1.5rem;
   border-radius: 1.6rem;
@@ -715,7 +715,7 @@ input[type="number"] {
   }
 
   .monitor {
-    width: 53%;
+    width: 58%;
   }
 
   .monitor__header {
@@ -783,8 +783,28 @@ input[type="number"] {
 /* ---------responsive for mobile------------- */
 @media (max-width: 420px) {
   .metabolism__img {
-    width: 39rem;
+    width: 35rem;
   }
+
+  .bmi__alert {
+    font-size: 2.1rem;
+  }
+
+  .bmi__advise {
+    font-size: 1.9rem;
+  }
+
+  .monitor__container{
+    width: 137%;
+  }
+
+  .table__img {
+    width: 84%;
+  }
+
+  .calculation {
+    height: 137rem;
+ }
 
   .measurement__title {
     font-size: 2.1rem;
@@ -803,6 +823,7 @@ input[type="number"] {
     width: 30rem;
   }
 
+  
   .monitor__header {
     font-size: 2.5rem;
   }
@@ -823,7 +844,7 @@ input[type="number"] {
   }
 
   .monitor--orange {
-    width: 107%;
+    width: 135%;
   }
 }
 
